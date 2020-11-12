@@ -47,6 +47,7 @@ Victoria Vu, gusvuvij@student.gu.se
    1. The system booking requests and responses are to be handled through MQTT.
 5. Dentists will be unavailable for booking appointments for 1 hour and also 30 minutes per day due to breaks.
 6. Dental appointments must be 30 minutes in length and start on the hour or half past the hour.
+7. Requests and responses need to follow the format in the provided JSON files.
 
 # Software Architecture Document (SAD)
 
@@ -61,14 +62,19 @@ TBD
 * Single-page web app front-end rather than a mobile-based front-end
 
 ### Architectural Styles
-TBD
+* Publish-Subscribe for the communication between the components
 
 ### How the Conceptual Design is Mapped Onto Implementation/Technologies
 TBD 
 
 #### Technologies
 * Vue.js for frontend
-* Mongoose for persistence
+* Bootstrap for frontend
+* Java for backend
+* Eclipse Paho
+   * Java
+   * JavaScript
+* Eclipse Mosquitto
 
 # Program Management Report (PMR)
 * Scrum
