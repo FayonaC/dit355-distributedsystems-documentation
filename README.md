@@ -52,7 +52,8 @@ Victoria Vu, gusvuvij@student.gu.se
 # Software Architecture Document (SAD)
 
 ## Description of the Conceptual Design of the Architecture
-TBD
+![Use Case Diagram](./Diagrams/UseCaseDiagramV1.png)
+![Component Diagram](./Diagrams/ComponentDiagramV1.png)
 
 ### Assumptions
 * Dentists will have lunch from 12:00-13:00
@@ -81,7 +82,10 @@ TBD
    * Kanban board
    * Roles: Product owner, Scrum master
    * Stand-up meetings on work days
-* Schedule will be decided on Mondays during the team meeting
+* Work to be done during the sprint will be decided during a Sprint Planning Meeting
+* Schedule for the week will be decided during a weekly team meeting
+
+See [Trello board](https://trello.com/b/tLswcs2r/dit-355-2020-team-3) for detailed schedule and work tasks carried out in each sprint
 
 ## Sprint 1
 * Week 1: Work Monday, Wednesday, Thursday
