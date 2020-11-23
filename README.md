@@ -80,19 +80,22 @@ TBD
 # Program Management Report (PMR)
 * Scrum
    * Kanban board
-   * Roles: Product owner, Scrum master
+   * Roles: Scrum master
    * Stand-up meetings on work days
+* [Code of Conduct](./CodeofConduct.md) acts as a team contract and states our expectations, policies and procedures, and consequences
+* [Useful links](./UsefulLinks.md) is a list of links deemed useful for the development of the project
 * Work to be done during the sprint will be decided during a Sprint Planning Meeting
 * Schedule for the week will be decided during a weekly team meeting
 
-See [Trello board](https://trello.com/b/tLswcs2r/dit-355-2020-team-3) for detailed schedule and work tasks carried out in each sprint
+See [Trello board](https://trello.com/b/tLswcs2r/dit-355-2020-team-3) for detailed schedule and work tasks carried out in each sprint.
 
 ## Sprint 1
 * Week 1: Work Monday, Wednesday, Thursday
 * Week 2: Work Monday, Wednesday, Thursday
 
 ## Sprint 2
-TBD
+* Week 1: Work Monday, Wednesday, Thursday
+* Week 2: 
 
 ## Sprint 3
 TBD
