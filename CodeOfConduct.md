@@ -1,5 +1,5 @@
-#Team Contract
-##1.1. Expectations
+# Team Contract
+## 1.1. Expectations
 * All team members are expected to attend meetings.
 * Communication will take place in a dedicated WhatsApp group and Discord for project work.
    * Zoom will be used for live communication, meetings and group work.
@@ -17,7 +17,7 @@
      * Clearing obstacles
      * Make sure team is on track
 
-##1.2. Policies and Procedures
+## 1.2. Policies and Procedures
 * A weekly meeting with corresponding template will be used to keep us on track and moving forward.
 * If a member is unable to attend a meeting, notice must be given via the dedicated WhatsApp group.
 * If an emergency arises, the affected team member will be exempt from attending a meeting.
@@ -26,7 +26,7 @@
 * Test code at regular intervals to ensure that the program is working.
 * Work according to Scrum.
 
-##1.3. Consequences
+## 1.3. Consequences
 * If a member is not meeting the above-mentioned expectations, this will be handled by the Scrum master.
 * If a team member is unable to perform an assigned task, it will be reassigned to another team member.
 
