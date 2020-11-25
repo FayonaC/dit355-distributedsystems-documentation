@@ -16,6 +16,7 @@
      * Create a nice working environment for team
      * Clearing obstacles
      * Make sure team is on track
+     * Manage the Trello board when the group is working together
 
 ## 1.2. Policies and Procedures
 * A weekly meeting with corresponding template will be used to keep us on track and moving forward.
