@@ -29,11 +29,13 @@ Victoria Vu, gusvuvij@student.gu.se
 5. The system shall provide booking confirmation/rejection to users.
 6. The system shall keep track of free time slots.
 7. The system shall keep track of the booked appointments.
+8. The system shall provide a way for the dentist information to be updated. 
 
 ## Non-functional Requirements
 1. The system shall be fault tolerant.
     1. The system shall be capable of appropriately handling standard failures, such as wrongly formatted data inputs or out of bounds inputs for the defined interfaces.
     2. The system’s resource-handling shall be mindful, e.g. stopped components must unsubscribe from the MQTT broker fulfilling the contract.
+    3. The system shall be able to handle large amounts of requests at the same time. 
 2. The system shall be responsive.
     1. The system shall react to simultaneous bookings visually. 
 
@@ -48,12 +50,13 @@ Victoria Vu, gusvuvij@student.gu.se
 5. Dentists will be unavailable for booking appointments for 1 hour and also 30 minutes per day due to breaks.
 6. Dental appointments must be 30 minutes in length and start on the hour or half past the hour.
 7. Requests and responses need to follow the format in the provided JSON files.
+8. Users will be able to select a date and time when booking their appointments. 
 
 # Software Architecture Document (SAD)
 
 ## Description of the Conceptual Design of the Architecture
-![Use Case Diagram](./Diagrams/UseCaseDiagramV1.png)
-![Component Diagram](./Diagrams/ComponentDiagramV1.png)
+![Use Case Diagram Version 1](./Diagrams/UseCaseDiagramV1.png)
+![Component Diagram Version 1](./Diagrams/ComponentDiagramV1.png)
 
 ### Assumptions
 * Dentists will have lunch from 12:00-13:00
