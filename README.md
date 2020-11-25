@@ -100,8 +100,8 @@ TBD
    * Kanban board
    * Roles: Scrum master
    * Stand-up meetings on work days
-* [Code of Conduct](./CodeofConduct.md) acts as a team contract and states our expectations, policies and procedures, and consequences
-* [Useful links](./UsefulLinks.md) is a list of links deemed useful for the development of the project
+* [Code of Conduct](https://git.chalmers.se/courses/dit355/2020/group-3/documentation/-/blob/master/CodeOfConduct.md) acts as a team contract and states our expectations, policies and procedures, and consequences
+* [Useful links](https://git.chalmers.se/courses/dit355/2020/group-3/documentation/-/blob/master/UsefulLinks.md) is a list of links deemed useful for the development of the project
 * Work to be done during the sprint will be decided during a Sprint Planning Meeting
 * Schedule for the week will be decided during a weekly team meeting
 
