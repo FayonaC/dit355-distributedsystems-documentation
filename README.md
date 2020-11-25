@@ -55,8 +55,23 @@ Victoria Vu, gusvuvij@student.gu.se
 # Software Architecture Document (SAD)
 
 ## Description of the Conceptual Design of the Architecture
+### Use case diagram version 1
+
 ![Use Case Diagram Version 1](./Diagrams/UseCaseDiagramV1.png)
+
+### Sequence diagram for viewing available time slots
+![Sequence Diagram View Available Time Slots](./Diagrams/SequenceViewTimeSlotsV1.png)
+
+### Sequence diagram for booking an appointment
+![Sequence Diagram Book an Appointment](./Diagrams/SequenceBookAppointmentV1.png)
+
+### Component diagram version 1
+
 ![Component Diagram Version 1](./Diagrams/ComponentDiagramV1.png)
+
+### Component diagram version 2
+
+![Component Diagram Version 2](./Diagrams/ComponentDiagramtV2.png)
 
 ### Assumptions
 * Dentists will have lunch from 12:00-13:00
