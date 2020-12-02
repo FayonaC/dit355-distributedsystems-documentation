@@ -38,6 +38,8 @@ Victoria Vu, gusvuvij@student.gu.se
     3. The system shall be able to handle large amounts of requests at the same time. 
 2. The system shall be responsive.
     1. The system shall react to simultaneous bookings visually. 
+3. The system shall respond to updates fast.
+   1. The system shall provide a way for updates to take effect within 10 minutes of their publication.
 
 ## Constraints
 1. The system shall consist of at least four distributed components.
@@ -51,6 +53,11 @@ Victoria Vu, gusvuvij@student.gu.se
 6. Dental appointments must be 30 minutes in length and start on the hour or half past the hour.
 7. Requests and responses need to follow the format in the provided JSON files.
 8. Users will be able to select a date and time when booking their appointments. 
+9. Updates to the dentist component will not happen more than twice per day.
+   1. Already existing bookings should not be affected by shorter opening hours or decrease in number of available dentists.
+   2. The id’s of the dental offices shall remain consistent.
+
+
 
 # Software Architecture Document (SAD)
 
@@ -58,6 +65,10 @@ Victoria Vu, gusvuvij@student.gu.se
 ### Use case diagram version 1
 
 ![Use Case Diagram Version 1](./Diagrams/UseCaseDiagramV1.png)
+
+### Use case diagram version 2
+
+![Use Case Diagram Version 2](./Diagrams/UseCaseDiagramV2.png)
 
 ### Sequence diagram for viewing available time slots
 ![Sequence Diagram View Available Time Slots](./Diagrams/SequenceViewTimeSlotsV1.png)
@@ -71,7 +82,11 @@ Victoria Vu, gusvuvij@student.gu.se
 
 ### Component diagram version 2
 
-![Component Diagram Version 2](./Diagrams/ComponentDiagramtV2.png)
+![Component Diagram Version 2](./Diagrams/ComponentDiagramV1.png)
+
+### Deployment diagram version 1
+
+![Deployment Diagram Version 1](./Diagrams/DeploymentDiagramV1.png)
 
 ### Assumptions
 * Dentists will have lunch from 12:00-13:00
@@ -113,7 +128,7 @@ See [Trello board](https://trello.com/b/tLswcs2r/dit-355-2020-team-3) for detail
 
 ## Sprint 2
 * Week 1: Work Monday, Wednesday, Thursday
-* Week 2: 
+* Week 2: Work Monday, Wednesday, Thursday
 
 ## Sprint 3
 TBD
