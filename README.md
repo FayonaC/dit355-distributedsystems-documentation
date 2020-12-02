@@ -82,7 +82,7 @@ Victoria Vu, gusvuvij@student.gu.se
 
 ### Component diagram version 2
 
-![Component Diagram Version 2](./Diagrams/ComponentDiagramV1.png)
+![Component Diagram Version 2](./Diagrams/ComponentDiagramtV2.png)
 
 ### Deployment diagram version 1
 
