@@ -62,31 +62,25 @@ Victoria Vu, gusvuvij@student.gu.se
 # Software Architecture Document (SAD)
 
 ## Description of the Conceptual Design of the Architecture
-### Use case diagram version 1
+For older versions of the diagrams, please see the /Diagrams folder.
 
-![Use Case Diagram Version 1](./Diagrams/UseCaseDiagramV1.png)
+### Use case diagram version 3
 
-### Use case diagram version 2
+![Use Case Diagram Version 3](./Diagrams/UseCaseDiagramV3.png)
 
-![Use Case Diagram Version 2](./Diagrams/UseCaseDiagramV2.png)
-
-### Sequence diagram for viewing available time slots
-![Sequence Diagram View Available Time Slots](./Diagrams/SequenceViewTimeSlotsV1.png)
+### Sequence diagram for viewing availability for a specific date
+![Sequence diagram View availability for a specific date](./Diagrams/SequenceViewTimeSlotsV2.png)
 
 ### Sequence diagram for booking an appointment
-![Sequence Diagram Book an Appointment](./Diagrams/SequenceBookAppointmentV1.png)
+![Sequence Diagram Book an Appointment](./Diagrams/SequenceBookAppointmentV2.png)
 
-### Component diagram version 1
+### Component diagram version 3
 
-![Component Diagram Version 1](./Diagrams/ComponentDiagramV1.png)
+![Component Diagram Version 3](./Diagrams/ComponentDiagramtV3.png)
 
-### Component diagram version 2
+### Deployment diagram version 2
 
-![Component Diagram Version 2](./Diagrams/ComponentDiagramtV2.png)
-
-### Deployment diagram version 1
-
-![Deployment Diagram Version 1](./Diagrams/DeploymentDiagramV1.png)
+![Deployment Diagram Version 2](./Diagrams/DeploymentDiagramV2.png)
 
 ### Assumptions
 * Dentists will have lunch from 12:00-13:00
