@@ -76,7 +76,7 @@ For older versions of the diagrams, please see the /Diagrams folder.
 
 ### Component diagram version 3
 
-![Component Diagram Version 3](./Diagrams/ComponentDiagramtV3.png)
+![Component Diagram Version 3](./Diagrams/ComponentDiagramV3.png)
 
 ### Deployment diagram version 2
 
