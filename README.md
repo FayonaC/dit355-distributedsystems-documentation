@@ -23,13 +23,15 @@ Victoria Vu, gusvuvij@student.gu.se
    1. The system shall allow users to book dentist appointments based on time slots.
 2. The system shall provide a map. 
    1. The system shall allow the map to be navigated.
+   2. The system shall allow the map to visually display an indication of availability to the user.
 3. The system shall allow users to find available appointment times.
 4. The system shall provide a graphical user interface for users to use the system.
    1. The system shall visually distinguish different appointment time slots. 
 5. The system shall provide booking confirmation/rejection to users.
-6. The system shall keep track of free time slots.
+6. The system shall be able to show free time slots.
 7. The system shall keep track of the booked appointments.
 8. The system shall provide a way for the dentist information to be updated. 
+9. The system shall include a request generator in order to enable stress-testing of the system.
 
 ## Non-functional Requirements
 1. The system shall be fault tolerant.
@@ -53,9 +55,9 @@ Victoria Vu, gusvuvij@student.gu.se
 6. Dental appointments must be 30 minutes in length and start on the hour or half past the hour.
 7. Requests and responses need to follow the format in the provided JSON files.
 8. Users will be able to select a date and time when booking their appointments. 
-9. Updates to the dentist component will not happen more than twice per day.
+9. Updates to the dentist registry will not happen more than twice per day.
    1. Already existing bookings should not be affected by shorter opening hours or decrease in number of available dentists.
-   2. The id’s of the dental offices shall remain consistent.
+   2. The ids of the dental offices shall remain consistent.
 
 
 
@@ -83,14 +85,14 @@ For older versions of the diagrams, please see the /Diagrams folder.
 ![Deployment Diagram Version 2](./Diagrams/DeploymentDiagramV2.png)
 
 ### Assumptions
-* Dentists will have lunch from 12:00-13:00
-* Dentist will have their fika breaks from 15:00-15:30
+* Dentists will have lunch for an hour in the middle of their work day.
+* Dentist will have their fika breaks in the first half hour of their work day.
 
 ### Design decisions
-* Single-page web app front-end rather than a mobile-based front-end
+* Single-page web app front-end rather than a mobile-based front-end.
 
 ### Architectural Styles
-* Publish-Subscribe for the communication between the components
+* Publish-Subscribe for the communication between the components.
 
 ### How the Conceptual Design is Mapped Onto Implementation/Technologies
 TBD 
@@ -103,6 +105,7 @@ TBD
    * Java
    * JavaScript
 * Eclipse Mosquitto
+* Mosquitto board
 
 # Program Management Report (PMR)
 * Scrum
@@ -125,7 +128,10 @@ See [Trello board](https://trello.com/b/tLswcs2r/dit-355-2020-team-3) for detail
 * Week 2: Work Monday, Wednesday, Thursday
 
 ## Sprint 3
-TBD
+* Week 1: Work Monday, Wednesday, Thursday
+* Week 2: Work Monday, Wednesday, Thursday
 
 ## Sprint 4
-TBD
+* Week 1: Work Monday, Tuesday, Wednesday
+* Week 2: Work Monday, Tuesday, Wednesday, Thursday, Friday pm, Saturday, Sunday
+* Week 3: Work Monday, Tuesday
