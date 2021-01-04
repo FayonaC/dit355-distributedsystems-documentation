@@ -117,17 +117,28 @@ Pipe and filter was introduced later as we realized that we needed something tha
    * Java
    * JavaScript
 * Eclipse Mosquitto
-* Mosquitto board
+* MQTT Explorer for logging
+* Leaflet
+* Resilience4J
+* Mapbox
 
 # Program Management Report (PMR)
 * Scrum
-   * Kanban board
-   * Roles: Scrum master
    * Stand-up meetings on work days
+    * Project work is organized into 4 sprints
+   * Kanban board is used on Trello to display the tasks and assigned team members
+      * Columns for overall backlog, sprint backlog, in progress, merge request/review, completed during each sprint, and discarded.
+        * The merge request/review column is where tasks connected to a merge request that required a review and testing by other team members would be placed. 
+        * The discarded column is for tasks we believed were necessary but were later rejected but we wanted to keep track of ideas and work produced so did not want to delete them.
+   * Roles: Scrum master
+     * Each team member took turns being the scrum master and it was decided that the role would cycle every Monday
+     * A decision was made to remove the role of product owner after the first week as we felt that the person did not get to do anything extra since they were merely a proxy for the product owners. 
+   * Stand-up meetings on days designated for project work to discuss the work performed and blockers encountered for each sub-team
+
 * [Code of Conduct](https://git.chalmers.se/courses/dit355/2020/group-3/documentation/-/blob/master/CodeOfConduct.md) acts as a team contract and states our expectations, policies and procedures, and consequences
 * [Useful links](https://git.chalmers.se/courses/dit355/2020/group-3/documentation/-/blob/master/UsefulLinks.md) is a list of links deemed useful for the development of the project
-* Work to be done during the sprint will be decided during a Sprint Planning Meeting
-* Schedule for the week will be decided during a weekly team meeting
+* Work to be done during the sprint will be decided during a Sprint Planning Meeting with notes taken to record the results of the meeting
+* Schedule for the week will be decided during a weekly team meeting, taking into account team member availability
 
 See [Trello board](https://trello.com/b/tLswcs2r/dit-355-2020-team-3) for detailed schedule and work tasks carried out in each sprint.
 
@@ -145,5 +156,5 @@ See [Trello board](https://trello.com/b/tLswcs2r/dit-355-2020-team-3) for detail
 
 ## Sprint 4
 * Week 1: Work Monday, Tuesday, Wednesday
-* Week 2: Work Monday, Tuesday, Wednesday, Thursday, Friday pm, Saturday, Sunday
+* Week 2: Work Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 * Week 3: Work Monday, Tuesday
