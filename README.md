@@ -93,9 +93,21 @@ For older versions of the diagrams, please see the /Diagrams folder.
 
 ### Architectural Styles
 * Publish-Subscribe for the communication between the components.
+* Pipe and filter for booking validation and generation of available booking slots
 
 ### How the Conceptual Design is Mapped Onto Implementation/Technologies
-TBD 
+
+One of our drivers is resilience since we have to make sure that the system is fault tolerant. 
+Furthermore, our other drivers were compulsory requirements given to us by the product owners: using a broker, having four components, using publish-subscribe as one of the architectural styles. 
+
+One of our forces is the group member’s knowledge of certain technologies. We chose to work with technologies that we have used before and are comfortable with, even if there are other technologies that might suit the system better. This leads to another one of our forces: time. Since the system has to be delivered by a certain date, we did not feel that we had the time to properly research and learn new technologies to use for this system. 
+
+The initial use case diagram was created to get an overview of what functions the system should have. As the system evolved, the diagram was updated to reflect the requirement changes, and also our new design decisions. 
+
+We knew from the start that we were going to use publish-subscribe since using a middleware based on the MQTT protocol was a requirement for this project. This would be our core architectural style as this is used by all of the components in the system. 
+
+Pipe and filter was introduced later as we realized that we needed something that would combine the information from the booking registry and dentist registry to generate the free time slots for a certain dentist and date, as well as validating the booking requests before publishing them for the booking component to use.
+
 
 #### Technologies
 * Vue.js for frontend
