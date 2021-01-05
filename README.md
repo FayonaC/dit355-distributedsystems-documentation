@@ -39,7 +39,7 @@ Victoria Vu, gusvuvij@student.gu.se
     2. The system’s resource-handling shall be mindful, e.g. stopped components must unsubscribe from the MQTT broker fulfilling the contract.
     3. The system shall be able to handle large amounts of requests at the same time. 
 2. The system shall be responsive.
-    1. The system shall react to simultaneous bookings visually. 
+    1. The system shall react to simultaneous bookings visually (preferably without requiring an active refreshing of the interface by the user).
 3. The system shall respond to updates fast.
    1. The system shall provide a way for updates to take effect within 10 minutes of their publication.
 
@@ -66,30 +66,48 @@ Victoria Vu, gusvuvij@student.gu.se
 ## Description of the Conceptual Design of the Architecture
 For older versions of the diagrams, please see the /Diagrams folder.
 
-### Use case diagram version 3
+### Use case diagram version 4
+![Use Case Diagram](./Diagrams/UseCaseV4.png)
 
-![Use Case Diagram Version 3](./Diagrams/UseCaseDiagramV3.png)
+This is a use case diagram with two actors represented, a User and the Leaflet Map API. It shows the main use cases they are involved in. 
 
-### Sequence diagram for viewing availability for a specific date
-![Sequence diagram View availability for a specific date](./Diagrams/SequenceViewTimeSlotsV2.png)
+### Sequence diagram for viewing availability for a specific date version 3
+![Sequence diagram View availability for a specific date](./Diagrams/SequenceViewTimeSlotsV3.png)
 
-### Sequence diagram for booking an appointment
-![Sequence Diagram Book an Appointment](./Diagrams/SequenceBookAppointmentV2.png)
+This a sequence diagram showing what happens in the system when a user selects a date on the calendar. It shows all the involved components and the interactions between them.
+
+### Sequence diagram for booking an appointment version 3
+![Sequence Diagram Book an Appointment](./Diagrams/SequenceBookAppointmentV3.png)
+
+This a sequence diagram showing what happens when a user makes a booking. It shows all the involved components and the interactions between them.
 
 ### Component diagram version 3
-
 ![Component Diagram Version 3](./Diagrams/ComponentDiagramV3.png)
 
-### Deployment diagram version 2
+This is a component diagram showing all the components involved in the system and how they use each other. It reflects the architectural styles we have chosen by listing the components’ roles in context of the two featured use cases. The diagram is structured following a layered style, it separates the components amongst the four layers.
 
+### Deployment diagram version 2
 ![Deployment Diagram Version 2](./Diagrams/DeploymentDiagramV2.png)
+
+This is a deployment diagram that shows where each component is being executed when the program is running. It also lists the transport protocols being used in the system to transfer data. 
+
+### Quality of Service Flowchart 
+![QualityOfServiceFlowchart](./Diagrams/QoSFlowchart.png)
+
+This is a quality of service flowchart showing the QoS levels set between the various sender and receiver relationships in the system. We have chosen to implement a QoS level of 1 everywhere in the system because due to the nature of the system we felt a level of 0 was too minimal and a level of 2 too slow for our users. Level 1 offered a good balance between ensuring messages are being received and providing a streamlined user experience. 
+
 
 ### Assumptions
 * Dentists will have lunch for an hour in the middle of their work day.
-* Dentist will have their fika breaks in the first half hour of their work day.
+* Dentists will have their fika breaks in the first half hour of their work day.
 
 ### Design decisions
 * Single-page web app front-end rather than a mobile-based front-end.
+* Whole website is one page, user is able to view availabilities and make bookings on the same page
+* Mapbox is used to display the map
+* Leaflet is used to display the pins and provide other functionality because it has more user-friendly documentation than Mapbox
+* Availability as its own component, we determined early on that the appointment availability was important and decided to have the filtering logic separate from Booking
+* For fault tolerance, we chose the circuit breaker because it is reactive. This means it would be able to adapt to what is happening in the system at any given time.
 
 ### Architectural Styles
 * Publish-Subscribe for the communication between the components.
@@ -103,6 +121,8 @@ Furthermore, our other drivers were compulsory requirements given to us by the p
 One of our forces is the group member’s knowledge of certain technologies. We chose to work with technologies that we have used before and are comfortable with, even if there are other technologies that might suit the system better. This leads to another one of our forces: time. Since the system has to be delivered by a certain date, we did not feel that we had the time to properly research and learn new technologies to use for this system. 
 
 The initial use case diagram was created to get an overview of what functions the system should have. As the system evolved, the diagram was updated to reflect the requirement changes, and also our new design decisions. 
+
+Because of the project requirement of having four components, and the functionality of the system, we created the following components: Dentist, Booking, Availability, and Frontend. These requirements impacted what responsibilities and functionality we gave the different components. 
 
 We knew from the start that we were going to use publish-subscribe since using a middleware based on the MQTT protocol was a requirement for this project. This would be our core architectural style as this is used by all of the components in the system. 
 
