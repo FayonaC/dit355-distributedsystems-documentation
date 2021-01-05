@@ -93,9 +93,21 @@ For older versions of the diagrams, please see the /Diagrams folder.
 
 ### Architectural Styles
 * Publish-Subscribe for the communication between the components.
+* Pipe and filter for booking validation and generation of available booking slots
 
 ### How the Conceptual Design is Mapped Onto Implementation/Technologies
-TBD 
+
+One of our drivers is resilience since we have to make sure that the system is fault tolerant. 
+Furthermore, our other drivers were compulsory requirements given to us by the product owners: using a broker, having four components, using publish-subscribe as one of the architectural styles. 
+
+One of our forces is the group member’s knowledge of certain technologies. We chose to work with technologies that we have used before and are comfortable with, even if there are other technologies that might suit the system better. This leads to another one of our forces: time. Since the system has to be delivered by a certain date, we did not feel that we had the time to properly research and learn new technologies to use for this system. 
+
+The initial use case diagram was created to get an overview of what functions the system should have. As the system evolved, the diagram was updated to reflect the requirement changes, and also our new design decisions. 
+
+We knew from the start that we were going to use publish-subscribe since using a middleware based on the MQTT protocol was a requirement for this project. This would be our core architectural style as this is used by all of the components in the system. 
+
+Pipe and filter was introduced later as we realized that we needed something that would combine the information from the booking registry and dentist registry to generate the free time slots for a certain dentist and date, as well as validating the booking requests before publishing them for the booking component to use.
+
 
 #### Technologies
 * Vue.js for frontend
@@ -105,17 +117,27 @@ TBD
    * Java
    * JavaScript
 * Eclipse Mosquitto
-* Mosquitto board
+* MQTT Explorer for logging
+* Leaflet
+* Resilience4J
+* Mapbox
 
 # Program Management Report (PMR)
 * Scrum
-   * Kanban board
-   * Roles: Scrum master
    * Stand-up meetings on work days
+    * Project work is organized into 4 sprints
+   * Kanban board is used on Trello to display the tasks and assigned team members
+      * Columns for overall backlog, sprint backlog, in progress, merge request/review, completed during each sprint, and discarded.
+        * The merge request/review column is where tasks connected to a merge request that required a review and testing by other team members would be placed. 
+        * The discarded column is for tasks we believed were necessary but were later rejected but we wanted to keep track of ideas and work produced so did not want to delete them.
+   * Roles: Scrum master
+     * Each team member took turns being the scrum master and it was decided that the role would cycle every Monday
+     * A decision was made to remove the role of product owner after the first week as we felt that the person did not get to do anything extra since they were merely a proxy for the product owners. 
+   * Stand-up meetings on days designated for project work to discuss the work performed and blockers encountered for each sub-team
+
 * [Code of Conduct](https://git.chalmers.se/courses/dit355/2020/group-3/documentation/-/blob/master/CodeOfConduct.md) acts as a team contract and states our expectations, policies and procedures, and consequences
-* [Useful links](https://git.chalmers.se/courses/dit355/2020/group-3/documentation/-/blob/master/UsefulLinks.md) is a list of links deemed useful for the development of the project
-* Work to be done during the sprint will be decided during a Sprint Planning Meeting
-* Schedule for the week will be decided during a weekly team meeting
+* Work to be done during the sprint will be decided during a Sprint Planning Meeting with notes taken to record the results of the meeting
+* Schedule for the week will be decided during a weekly team meeting, taking into account team member availability
 
 See [Trello board](https://trello.com/b/tLswcs2r/dit-355-2020-team-3) for detailed schedule and work tasks carried out in each sprint.
 
@@ -133,5 +155,5 @@ See [Trello board](https://trello.com/b/tLswcs2r/dit-355-2020-team-3) for detail
 
 ## Sprint 4
 * Week 1: Work Monday, Tuesday, Wednesday
-* Week 2: Work Monday, Tuesday, Wednesday, Thursday, Friday pm, Saturday, Sunday
+* Week 2: Work Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 * Week 3: Work Monday, Tuesday
