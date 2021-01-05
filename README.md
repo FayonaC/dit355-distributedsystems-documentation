@@ -30,8 +30,7 @@ Victoria Vu, gusvuvij@student.gu.se
 5. The system shall provide booking confirmation/rejection to users.
 6. The system shall be able to show free time slots.
 7. The system shall keep track of the booked appointments.
-8. The system shall provide a way for the dentist information to be updated. 
-9. The system shall include a request generator in order to enable stress-testing of the system.
+8. The system shall include a request generator in order to enable stress-testing of the system.
 
 ## Non-functional Requirements
 1. The system shall be fault tolerant.
